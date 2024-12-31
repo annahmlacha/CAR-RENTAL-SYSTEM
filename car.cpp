@@ -192,3 +192,21 @@ int main() {
         cout << "Enter your choice: ";
         cin >> choice;
 
+        switch (choice) {
+            case 1:
+                system.displayAvailableCars();
+                break;
+            case 2:
+                system.rentCar();
+                break;
+            case 3:
+                system.returnCar();
+                break;
+            case 4:
+                system.displayRentalHistory();
+                break;
+            case 5:
+                cout << "Exiting the system." << endl;
+                return 0;
+            default:
+
