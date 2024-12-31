@@ -61,3 +61,10 @@ class CarRentalSystem {
 private:
     vector<Car> cars;
     vector<Rental> rentals;
+
+    public:
+    // Add car to the system
+    void addCar(string model, string licensePlate, double dailyRentalRate) {
+        Car newCar(model, licensePlate, dailyRentalRate);
+        cars.push_back(newCar);
+    }
