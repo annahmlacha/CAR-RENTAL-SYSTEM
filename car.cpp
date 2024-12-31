@@ -162,3 +162,12 @@ private:
     }
 
 
+ // Display rental history
+    void displayRentalHistory() {
+        cout << "Rental History: " << endl;
+        for (auto &rental : rentals) {
+            rental.displayRentalInfo();
+        }
+    }
+};
+
