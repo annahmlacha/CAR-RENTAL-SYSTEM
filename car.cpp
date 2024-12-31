@@ -171,3 +171,13 @@ private:
     }
 };
 
+int main() {
+    CarRentalSystem system;
+    
+    // Adding some cars to the system
+    system.addCar("Toyota Camry", "ABC123", 50.0);
+    system.addCar("Honda Accord", "XYZ789", 45.0);
+    system.addCar("Ford Mustang", "LMN456", 75.0);
+
+    int choice;
+
