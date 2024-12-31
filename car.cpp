@@ -149,3 +149,16 @@ private:
         cout << "Enter car's license plate to return: ";
         cin >> licensePlate;
 
+         // Find the car by license plate
+        for (auto &car : cars) {
+            if (car.licensePlate == licensePlate && !car.isAvailable) {
+                car.isAvailable = true;
+                cout << "Car returned successfully!" << endl;
+                return;
+            }
+        }
+
+        cout << "Car not found or already returned!" << endl;
+    }
+
+
