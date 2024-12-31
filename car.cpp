@@ -29,3 +29,11 @@ public:
         cout << "-------------------------" << endl;
     }
 };
+
+// Rental class to handle the rental process
+class Rental {
+public:
+    string customerName;
+    Car* rentedCar;
+    int rentalDays;
+    double totalCost;
