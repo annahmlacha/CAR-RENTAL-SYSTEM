@@ -181,3 +181,14 @@ int main() {
 
     int choice;
 
+      while (true) {
+        // Menu for user interaction
+        cout << "\nCar Rental System Menu:" << endl;
+        cout << "1. Display Available Cars" << endl;
+        cout << "2. Rent a Car" << endl;
+        cout << "3. Return a Car" << endl;
+        cout << "4. Display Rental History" << endl;
+        cout << "5. Exit" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
