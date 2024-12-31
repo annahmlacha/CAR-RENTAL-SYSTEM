@@ -101,3 +101,23 @@ private:
                 break;
             }
         }
+
+         // Find the car by license plate
+        Car* carToRent = nullptr;
+        for (auto &car : cars) {
+            if (car.licensePlate == licensePlate && car.isAvailable) {
+                carToRent = &car;
+                break;
+            }
+        }
+
+        if (carToRent != nullptr) {
+            carToRent->isAvailable = false;
+            Rental newRental(customerName, carToRent, rentalDays);
+            rentals.push_back(newRental);
+            cout << "Car rented successfully!" << endl;
+            newRental.displayRentalInfo();
+        } else {
+            cout << "Car not available or invalid license plate!" << endl;
+        }
+    }
