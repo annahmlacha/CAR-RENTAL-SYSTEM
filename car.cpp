@@ -37,3 +37,11 @@ public:
     Car* rentedCar;
     int rentalDays;
     double totalCost;
+
+     // Constructor
+    Rental(string name, Car* car, int days) {
+        customerName = name;
+        rentedCar = car;
+        rentalDays = days;
+        totalCost = days * car->dailyRentalRate;
+    }
