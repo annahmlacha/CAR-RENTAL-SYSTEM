@@ -78,3 +78,9 @@ private:
             }
         }
     }
+
+    // Rent a car
+    void rentCar() {
+        string customerName;
+        string licensePlate;
+        int rentalDays;
