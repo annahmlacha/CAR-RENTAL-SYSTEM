@@ -19,3 +19,13 @@ public:
         isAvailable = true;
         dailyRentalRate = rate;
     }
+
+     // Function to display car details
+    void displayCarInfo() {
+        cout << "Model: " << model << endl;
+        cout << "License Plate: " << licensePlate << endl;
+        cout << "Available: " << (isAvailable ? "Yes" : "No") << endl;
+        cout << "Daily Rental Rate: $" << dailyRentalRate << endl;
+        cout << "-------------------------" << endl;
+    }
+};
