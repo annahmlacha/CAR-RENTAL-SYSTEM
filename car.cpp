@@ -11,3 +11,11 @@ public:
     string licensePlate;
     bool isAvailable;
     double dailyRentalRate;
+
+        // Constructor
+    Car(string m, string lp, double rate) {
+        model = m;
+        licensePlate = lp;
+        isAvailable = true;
+        dailyRentalRate = rate;
+    }
