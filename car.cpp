@@ -55,3 +55,9 @@ public:
         cout << "-------------------------" << endl;
     }
 };
+
+// CarRentalSystem class to manage the entire rental process
+class CarRentalSystem {
+private:
+    vector<Car> cars;
+    vector<Rental> rentals;
