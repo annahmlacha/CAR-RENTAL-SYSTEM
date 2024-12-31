@@ -84,3 +84,11 @@ private:
         string customerName;
         string licensePlate;
         int rentalDays;
+
+        
+        cout << "Enter customer name: ";
+        cin >> customerName;
+        cout << "Enter car's license plate: ";
+        cin >> licensePlate;
+        cout << "Enter rental days: ";
+        cin >> rentalDays;
