@@ -45,3 +45,13 @@ public:
         rentalDays = days;
         totalCost = days * car->dailyRentalRate;
     }
+
+     // Function to display rental information
+    void displayRentalInfo() {
+        cout << "Customer: " << customerName << endl;
+        cout << "Car Model: " << rentedCar->model << endl;
+        cout << "Rental Days: " << rentalDays << endl;
+        cout << "Total Cost: $" << fixed << setprecision(2) << totalCost << endl;
+        cout << "-------------------------" << endl;
+    }
+};
