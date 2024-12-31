@@ -68,3 +68,13 @@ private:
         Car newCar(model, licensePlate, dailyRentalRate);
         cars.push_back(newCar);
     }
+
+    // Display available cars
+    void displayAvailableCars() {
+        cout << "Available Cars: " << endl;
+        for (auto &car : cars) {
+            if (car.isAvailable) {
+                car.displayCarInfo();
+            }
+        }
+    }
