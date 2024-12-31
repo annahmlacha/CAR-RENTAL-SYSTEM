@@ -92,3 +92,12 @@ private:
         cin >> licensePlate;
         cout << "Enter rental days: ";
         cin >> rentalDays;
+
+         // Find the car by license plate
+        Car* carToRent = nullptr;
+        for (auto &car : cars) {
+            if (car.licensePlate == licensePlate && car.isAvailable) {
+                carToRent = &car;
+                break;
+            }
+        }
